@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <script
+      src="https://kit.fontawesome.com/e6350a347e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 id="heading-text">Rock, Paper, Scissors</h1>
+        <button id="heading-btn" onclick="howToFunc()">How to Play</button>
+      </div>
+      <div class="how-to">
+        <h2>How To Play</h2>
+        <p>Rock, Paper, Scissors is a classic, 2-player game!</p>
+        <p>
+          The game is simple! Choose from the three options: rock, paper, or
+          scissors. The computer will make a choice of its own.
+        </p>
+        <p>Rock beats Scissors</p>
+        <p>Scissors beats Paper</p>
+        <p>Paper beats Rock</p>
+        <p>Good luck!</p>
+      </div>
+      <table class="score">
+        <tr>
+          <th><i class="fas fa-user"></i></th>
+          <td id="player">0</td>
+        </tr>
+        <tr>
+          <th><i class="fas fa-robot"></i></th>
+          <td id="computer">0</td>
+        </tr>
+      </table>
+      <div class="game">
+        <button id="btn-rock" onclick="clickedRock()">
+          <i class="fas fa-hand-rock"></i>
+        </button>
+        <button id="btn-paper" onclick="clickedPaper()">
+          <i class="fas fa-hand-paper"></i>
+        </button>
+        <button id="btn-scissors" onclick="clickedScissors()">
+          <i class="fas fa-hand-scissors"></i>
+        </button>
+      </div>
+      <!-- <div class="win-lose-tie">
+            <h2 id="win-text">You Win!</h2>
+            <h2 id="lose-text">You Lose...</h2>
+            <h2 id="tie-text">It's a Tie.</h2>
+        </div> -->
+      <!-- <div class="resultModal">
+            <div class="modal-content"> -->
+      <!-- <span class="close">X</span> -->
+      <p id="playerChoice"></p>
+      <p id="compChoice"></p>
+      <h2 id="result"></h2>
+      <!-- </div>    
+        </div> -->
+      <footer>
+        <p>Created by Jenna Hernandez &copy; 2022</p>
+        <a href="https://github.com/jennah2" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </footer>
+    </div>
+  </body>
+</html>
